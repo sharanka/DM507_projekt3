@@ -13,12 +13,6 @@ public class Node {
         this.rightChild = null;
     }
 
-    public Node(Object o, Object o1) {
-        this._byte = null;
-        this.leftChild = (Node) o;
-        this.rightChild = (Node) o1;
-    }
-
     public Node () {
         this.leftChild = null;
         this.rightChild = null;
@@ -33,7 +27,7 @@ public class Node {
 
     public void setRightChild(Node child) { this.rightChild = child; } // change the right child
 
-    public Integer get_byte() { return this._byte; } // returns the key
+    public Integer getByte() { return this._byte; } // returns the key
 
     public void set_byte(int _byte) { this._byte = _byte;}
 

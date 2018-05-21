@@ -64,6 +64,7 @@ public class PQHeap implements PQ {
         }
     }
 
+    public int getSize() { return size;}
     private int left(int i) { return (i) * 2 + 1; } // Returns left child node
     private int right(int i) { return (i) * 2 + 2; } // Returns right child node
     private int parent(int i) { return (i - 1) / 2; } // Returns parent node
