@@ -123,7 +123,9 @@ public class Encode {
         }
         return pqHeap.extractMin();
     }*/
+
     public Element huffman(int[] _bytes) {
+        System.out.println("enter huffman");
         int n = _bytes.length;
         pqHeap = new PQHeap(n);
         buildPQHeap(pqHeap, _bytes);
@@ -140,6 +142,7 @@ public class Encode {
             Element element = new Element(x.key + y.key, data);
             pqHeap.insert(element);
         }
+        System.out.println("exit huffman");
         return pqHeap.extractMin();
     }
 

@@ -8,6 +8,7 @@ public class Decode {
     private String fileName;
     private FileInputStream fileInput;
     private BitInputStream bitInput;
+    private FileOutputStream fileOutput;
 
     public void scanInput() throws FileNotFoundException, IOException {
         int counter = 0;
@@ -19,9 +20,15 @@ public class Decode {
             fileInput = new FileInputStream(new File(fileName));
             bitInput = new BitInputStream(fileInput);
 
-            while ((_byte = bitInput.readBit()) != -1 && counter < bytes.length) {
-                getBytes()[_byte]++;
-                //System.out.println(getBytes()[_byte]);
+            while ((_byte = bitInput.readBit()) != -1) {
+                if (counter < getBytes().length) {
+                    getBytes()[_byte]++;
+                    counter++;
+                    continue;
+                }
+                if (counter == getBytes().length) {
+
+                }
             }
         } catch (IOException ioe) {
             System.out.println(ioe);
