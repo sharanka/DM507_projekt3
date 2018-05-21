@@ -14,18 +14,18 @@ public class HuffManTree {
         this.root = root;
     }
 
-    public Integer search(Node root, Integer _byte) {
-        if (root == null || root.get_byte() == _byte) {
-            return root;
-        }
-        if (root.get_byte() == _byte) {
-            return root.get_byte();
-        }
-        if (root.get_byte() > _byte) {
-            return search(root.getRightChild(), _byte);
-        }
-        return search(root.getLeftChild(), _byte);
-    }
+//    public Integer search(Node root, Integer _byte) {
+//        if (root == null || root.get_byte() == _byte) {
+//            return root;
+//        }
+//        if (root.get_byte() == _byte) {
+//            return root.get_byte();
+//        }
+//        if (root.get_byte() > _byte) {
+//            return search(root.getRightChild(), _byte);
+//        }
+//        return search(root.getLeftChild(), _byte);
+//    }
 
     public Node getRoot() {return this.root;}
 
