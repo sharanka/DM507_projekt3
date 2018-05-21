@@ -74,18 +74,18 @@ public class Encode {
     public String convert(Node current, Integer _byte, String path) {
         if (current != null) {
             if (current.getLeftChild() != null) {
-                path.concat("0");
+                path = path.concat("0");
                 //System.out.println("added 0 total path is: " + path);
                 path = convert(current.getLeftChild(), _byte, path);
             }
             if (current.getRightChild() != null) {
                 //System.out.println("added 1 total path is: " + path);
-                path.concat("1");
+                path = path.concat("1");
                 path = convert(current.getRightChild(), _byte, path);
             }
             if (current.get_byte() == _byte) {
                 keywords[_byte] = path;
-                //System.out.println("path is: " + path);
+                System.out.println("path is: " + path);
             }
         }
         if (path.length() > 0) {
