@@ -1,3 +1,4 @@
+
 import java.io.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -79,8 +80,8 @@ public class Encode {
                 path = convert(current.getLeftChild(), _byte, path);
             }
             if (current.getRightChild() != null) {
-                //System.out.println("added 1 total path is: " + path);
                 path = path.concat("1");
+                //System.out.println("added 1 total path is: " + path);
                 path = convert(current.getRightChild(), _byte, path);
             }
             if (current.get_byte() == _byte) {
@@ -89,6 +90,7 @@ public class Encode {
             }
         }
         if (path.length() > 0) {
+            //System.out.println("removing last bit");
             path = path.substring(0, path.length() - 1);
             //System.out.println("path is: " + path);
         }
@@ -121,7 +123,6 @@ public class Encode {
         }
         return pqHeap.extractMin();
     }*/
-
     public Element huffman(int[] _bytes) {
         int n = _bytes.length;
         pqHeap = new PQHeap(n);
@@ -166,7 +167,12 @@ public class Encode {
                 //System.out.println("keywords at _byte is: " + keywords[_byte]);
                 String string = keywords[_byte];
                 if (string != "" && string != null) {
-                    bitOutput.writeInt(Integer.parseInt(keywords[_byte]));
+                    if (string.length() <= 9) {
+                        bitOutput.writeInt(Integer.parseInt(keywords[_byte]));
+                    } else {
+                        bitOutput.writeInt(Integer.parseInt(keywords[_byte].substring(0,9)));
+                        bitOutput.writeInt(Integer.parseInt(string.substring(9, string.length())));
+                    }
                 }
             }
         } catch (IOException ioe) {
