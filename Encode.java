@@ -67,29 +67,30 @@ public class Encode {
     public void generateKeyWords(Element e) {
         HuffManTree ht = (HuffManTree) e.data;
         for (int i = 0; i < keywords.length; i++) {
-            convert(ht.getRoot(), i, "0");
+            convert(ht.getRoot(), i, "");
         }
     }
 
     public String convert(Node current, Integer _byte, String path) {
-
         if (current != null) {
             if (current.getLeftChild() != null) {
                 path.concat("0");
-                System.out.println("added 0 total path is: " + path);
+                //System.out.println("added 0 total path is: " + path);
                 path = convert(current.getLeftChild(), _byte, path);
             }
             if (current.getRightChild() != null) {
-                System.out.println("added 0 total path is: " + path);
+                //System.out.println("added 1 total path is: " + path);
                 path.concat("1");
                 path = convert(current.getRightChild(), _byte, path);
             }
             if (current.get_byte() == _byte) {
                 keywords[_byte] = path;
+                //System.out.println("path is: " + path);
             }
         }
         if (path.length() > 0) {
             path = path.substring(0, path.length() - 1);
+            //System.out.println("path is: " + path);
         }
         return path;
     }
@@ -161,9 +162,12 @@ public class Encode {
         try {
 
             while ((_byte = fileInput.read()) != -1) {
-                System.out.println("byte frequency is: " + _byte);
-                System.out.println("keywords at _byte is: " + keywords[_byte]);
-                bitOutput.writeInt(Integer.parseInt(keywords[_byte]));
+                //System.out.println("byte frequency is: " + _byte);
+                //System.out.println("keywords at _byte is: " + keywords[_byte]);
+                String string = keywords[_byte];
+                if (string != "" && string != null) {
+                    bitOutput.writeInt(Integer.parseInt(keywords[_byte]));
+                }
             }
         } catch (IOException ioe) {
             System.out.println(ioe);

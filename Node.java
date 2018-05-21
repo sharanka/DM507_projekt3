@@ -33,7 +33,7 @@ public class Node {
 
     public void setRightChild(Node child) { this.rightChild = child; } // change the right child
 
-    public int get_byte() { return this._byte; } // returns the key
+    public Integer get_byte() { return this._byte; } // returns the key
 
     public void set_byte(int _byte) { this._byte = _byte;}
 
