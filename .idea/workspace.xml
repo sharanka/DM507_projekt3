@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d4f74dd-5385-49af-b899-c4a1b278d34b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Decode.java" afterPath="$PROJECT_DIR$/Decode.java" />
-      <change beforePath="$PROJECT_DIR$/testout.txt" afterPath="$PROJECT_DIR$/testout.txt" />
+      <change beforePath="$PROJECT_DIR$/HuffManTree.java" afterPath="$PROJECT_DIR$/HuffManTree.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,13 +18,43 @@
       <file leaf-file-name="Decode.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Decode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+            <state relative-caret-position="908">
+              <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1490#1491#0" expanded="true" />
-                <element signature="e#1518#1519#0" expanded="true" />
+                <element signature="e#1950#1951#0" expanded="true" />
+                <element signature="e#1978#1979#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HuffManTree.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HuffManTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="800">
+              <caret line="24" column="53" lean-forward="false" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PQHeap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PQHeap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,16 +82,16 @@
       <file leaf-file-name="Encode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Encode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3280">
-              <caret line="193" column="5" lean-forward="true" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="5" />
+            <state relative-caret-position="5640">
+              <caret line="153" column="69" lean-forward="true" selection-start-line="153" selection-start-column="69" selection-end-line="153" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6946#6947#0" expanded="true" />
-                <element signature="e#6986#6987#0" expanded="true" />
-                <element signature="e#7121#7122#0" expanded="true" />
-                <element signature="e#7175#7176#0" expanded="true" />
-                <element signature="e#7247#7248#0" expanded="true" />
-                <element signature="e#7275#7276#0" expanded="true" />
+                <element signature="e#7061#7062#0" expanded="true" />
+                <element signature="e#7101#7102#0" expanded="true" />
+                <element signature="e#7236#7237#0" expanded="true" />
+                <element signature="e#7290#7291#0" expanded="true" />
+                <element signature="e#7362#7363#0" expanded="true" />
+                <element signature="e#7390#7391#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,6 +112,7 @@
       <list>
         <option value="$PROJECT_DIR$/Node.java" />
         <option value="$PROJECT_DIR$/Encode.java" />
+        <option value="$PROJECT_DIR$/HuffManTree.java" />
         <option value="$PROJECT_DIR$/Decode.java" />
       </list>
     </option>
@@ -250,7 +282,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3958000" />
+    <option name="totallyTimeSpent" value="7809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
@@ -310,8 +342,8 @@
           <caret line="41" column="69" lean-forward="true" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1490#1491#0" expanded="true" />
-            <element signature="e#1518#1519#0" expanded="true" />
+            <element signature="e#1950#1951#0" expanded="true" />
+            <element signature="e#1978#1979#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -322,21 +354,13 @@
           <caret line="178" column="40" lean-forward="true" selection-start-line="178" selection-start-column="40" selection-end-line="178" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6946#6947#0" expanded="true" />
-            <element signature="e#6986#6987#0" expanded="true" />
-            <element signature="e#7121#7122#0" expanded="true" />
-            <element signature="e#7175#7176#0" expanded="true" />
-            <element signature="e#7247#7248#0" expanded="true" />
-            <element signature="e#7275#7276#0" expanded="true" />
+            <element signature="e#7061#7062#0" expanded="true" />
+            <element signature="e#7101#7102#0" expanded="true" />
+            <element signature="e#7236#7237#0" expanded="true" />
+            <element signature="e#7290#7291#0" expanded="true" />
+            <element signature="e#7362#7363#0" expanded="true" />
+            <element signature="e#7390#7391#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -356,22 +380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Encode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3280">
-          <caret line="193" column="5" lean-forward="true" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6946#6947#0" expanded="true" />
-            <element signature="e#6986#6987#0" expanded="true" />
-            <element signature="e#7121#7122#0" expanded="true" />
-            <element signature="e#7175#7176#0" expanded="true" />
-            <element signature="e#7247#7248#0" expanded="true" />
-            <element signature="e#7275#7276#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BitInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1200">
@@ -380,14 +388,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Decode.java">
+    <entry file="file://$PROJECT_DIR$/PQHeap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/encoded.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Encode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5640">
+          <caret line="153" column="69" lean-forward="true" selection-start-line="153" selection-start-column="69" selection-end-line="153" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1490#1491#0" expanded="true" />
-            <element signature="e#1518#1519#0" expanded="true" />
+            <element signature="e#7061#7062#0" expanded="true" />
+            <element signature="e#7101#7102#0" expanded="true" />
+            <element signature="e#7236#7237#0" expanded="true" />
+            <element signature="e#7290#7291#0" expanded="true" />
+            <element signature="e#7362#7363#0" expanded="true" />
+            <element signature="e#7390#7391#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HuffManTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="24" column="53" lean-forward="false" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Decode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="908">
+          <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1950#1951#0" expanded="true" />
+            <element signature="e#1978#1979#0" expanded="true" />
           </folding>
         </state>
       </provider>
