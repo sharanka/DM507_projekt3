@@ -9,6 +9,8 @@ public class Decode {
     private FileInputStream fileInput;
     private BitInputStream bitInput;
     private FileOutputStream fileOutput;
+    private HuffManTree ht;
+    private Encode e;
 
     public void scanInput() throws FileNotFoundException, IOException {
         int counter = 0;
@@ -20,16 +22,19 @@ public class Decode {
             fileInput = new FileInputStream(new File(fileName));
             bitInput = new BitInputStream(fileInput);
 
-            while ((_byte = bitInput.readBit()) != -1) {
+            while ((_byte = bitInput.readInt()) != -1) {
                 if (counter < getBytes().length) {
                     getBytes()[_byte]++;
                     counter++;
-                    continue;
-                }
-                if (counter == getBytes().length) {
-
                 }
             }
+            e = new Encode();
+            ht = (HuffmanTree) e.huffman(bytes).data;
+
+            while (_byte = bitInput.readBit() != -1) {
+
+            }
+
         } catch (IOException ioe) {
             System.out.println(ioe);
         } finally {
@@ -44,6 +49,8 @@ public class Decode {
         }
         System.out.println("end scan input");
     }
+
+
 
     public int[] getBytes() {
         return bytes;
